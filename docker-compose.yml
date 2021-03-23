@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  egress:
+    build: .
+    container_name: egress
+    image: pennsieve/etl-egress
+    volumes:
+      - ./data/:/docker_scratch/
+      - ./egress/egress.py:/usr/src/egress/egress.py
+      - ./egress/example.json:/usr/src/egress/example.json
+    environment:
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_REGION_SHORTNAME: use1
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+      ENVIRONMENT: dev
+      AWS_REGION: us-east-1
+      STORAGE_S3_BUCKET: pennsieve-ops
+      SUPPORTED_FILE_TYPES: video

@@ -1,0 +1,11 @@
+data/
+devvenv/
+tmp/
+venv/
+.DS_Store
+.cache
+.coverage
+.pytest_cache/
+*.swp
+*.pyc
+*.zip
