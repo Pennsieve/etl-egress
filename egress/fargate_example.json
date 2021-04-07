@@ -40,9 +40,9 @@
             {"name":"ENVIRONMENT",
             "value":"dev"},
             {"name":"NEXTFLOW_IAM_ACCESS_KEY_ID",
-            "value":"AKIAIJWKRQ5AAD5U2DQA"},
+            "value":"AKIAIOSFODNN7EXAMPLE"},
             {"name":"NEXTFLOW_IAM_ACCESS_KEY_SECRET",
-            "value":"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"}],
+            "value":"wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"}],
         "cpu":512,
         "memory":2048,
         "name":"nextflow"
